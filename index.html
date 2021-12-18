@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Space ForAll</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="#" class="logo">
+          <img src="assets/logo.svg" alt="Logo do Space ForAll" />
+        </a>
+
+        <ul>
+          <li>
+            <a href="">Início</a>
+          </li>
+          <li>
+            <a href="">O projeto</a>
+          </li>
+          <li>
+            <a href="">Como participar</a>
+          </li>
+          <li>
+            <a href="">Cursos</a>
+          </li>
+        </ul>
+        <div class="toggle close"><img src="assets/close.svg" alt="" /></div>
+        <div class="toggle menu"><img src="assets/menu.svg" alt="" /></div>
+
+        <button class="button">INSCREVA-SE</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" id="home">
+        <div class="container">
+          <img id="planets3d" src="assets/planets3d.svg" alt="" />
+          <img id="rocket3d" src="assets/rocket3d.svg" alt="" />
+          <div class="text">
+            <h1>Levando <span>quem precisa</span> ao espaço</h1>
+            <span> Oportunidade de estudo e trabalho </span>
+            <p>
+              Em parceria com empresas de educação oferecemos cursos pagos com
+              formações de grande empregabilidade para pessoas carentes,
+              começando a pagar apenas quando estiver trabalhando.
+            </p>
+            <button class="button">EMBARCAR NO FOGUETE</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- <section class="section" id="launchBase">
+        <div class="container">
+          <div class="text">
+            <h2 class="title">Base de lançamento</h2>
+            <p>
+              O projeto é uma <strong>causa social</strong> que patrocina o
+              conhecimento e evolução de pessoas carentes por meio do
+              <strong>Modelo de Sucesso Compartilhado</strong>, disponibilizando
+              acesso a <strong>formações de qualidade</strong> oferecidas por
+              empresas comprometidas com a educação.
+            </p>
+            <p>
+              Com a sua formação garantida
+              <strong>as melhores oportunidades no mercado de trabalho
+              são abertas</strong> e nós te acompanhamos por todo o processo na busca de emprego contando com a </strong>ajuda de empresas parceiras.</strong>
+            </p>
+          </div>
+          <div id="requirements">
+            <div class="align">
+              <h3 class="counter">1</h3>
+              <p>
+                O aluno não paga nada enquanto não possuir uma remuneração
+                mínima de R$ 3.000,00 por mês.
+              </p>
+            </div>
+
+            <div id="group">
+              <div class="align">
+                <h3 class="counter">2</h3>
+                <p>
+                  A partir do momento que é atingido essa remuneração mínima, o
+                  aluno passará a pagar mensalmente uma porcentagem, relativa ao
+                  curso, da sua remuneração.
+                </p>
+              </div>
+              <div class="align">
+                <h3 class="counter">3</h3>
+                <p>
+                  Caso o aluno pare de trabalhar ou tenha a renda abaixo do
+                  mínimo, o pagamento é suspenso. Demonstrando o comprometimento
+                  que temos com o sucesso das pessoas que confiam no projeto.
+                </p>
+              </div>
+            </div>
+            <img src="assets/launch-base.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section" id="astronaut-selection">
+        <div class="container">
+          <header>
+            <div class="text">
+              <h2 class="title">Seleção de astronautas</h2>
+              <p>
+                A seleção dos alunos será feita com base em seu perfil,priorizando os que moram no Brasil e em situação de pobreza.
+              </p>
+              <p>
+                Não é necessário ter qualquer conhecimento prévio para se inscrever, apenas cumprir os critérios abaixo:
+              </p>
+            </div>
+
+            <div>
+              <img src="assets/astronaut.svg" alt="" />
+            </div>
+          </header>
+          <div class="simple-cards">
+            <div class="simple-card">
+              <i>
+                <img src="assets/hood.svg" alt="">
+              </i>
+              <div class="line"></div>
+              <span>Ensino médio</span>
+              <img class="arrow" src="assets/arrow.svg" alt="">
+            </div>
+            <div class="simple-card">
+              <i>
+                <img src="assets/hearth.svg" alt="">
+              </i>
+              <div class="line"></div>
+              <img class="arrow" src="assets/arrow.svg" alt="">
+              <span>Comprometimento</span>
+            </div>
+            <div class="simple-card">
+              <i>
+                <img src="assets/+18.svg" alt="">
+              </i>
+              <div class="line"></div>
+              <span>Maior de idade</span>
+            </div>
+            <div class="simple-card">
+              <i>
+                <img src="assets/clock.svg" alt="">
+              </i>
+              <div class="line"></div>
+              <span>Disponibilidade</span>
+            </div>
+          </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section" id="courses">
+        <div class="container">
+          <header>
+            <img src="assets/stars.svg" alt="">
+            
+            <img id="telescope" src="assets/telescope.svg" alt="">
+            <h2 class="title">
+              Olhando para o espaço
+            </h2>
+            <p>Escolha entre cursos de diferentes áreas com <strong>formações completas com foco no mercado de trabalho.</strong></p>
+          </header>
+          <div class="cards">
+            <div class="card">
+              <header>
+                <span>
+                  <h2>Ignite</h2>
+                  <h3>Rocketseat</h3>
+                </span>
+                <i>
+                  <img src="assets/ignite.svg" alt="">
+                </i>
+              </header>
+              <div>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Backend
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Frontend
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Mobile
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Métodos ágeis
+                </span>
+              </div>
+              <button class="button">INSCREVA-SE</button>
+            </div>
+            <div class="card">
+              <header>
+                <span>
+                  <h2>Data Science</h2>
+                  <h3>Alura</h3>
+                </span>
+                <i>
+                  <img src="assets/data-science.svg" alt="">
+                </i>
+              </header>
+              <div>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Banco de dados
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Machine Learning
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Ciência de dados
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Métodos ágeis
+                </span>
+              </div>
+              <button class="button">INSCREVA-SE</button>
+            </div>
+            <div class="card">
+              <header>
+                <span>
+                  <h2>Design</h2>
+                  <h3>Digital House</h3>
+                </span>
+                <i>
+                  <img src="assets/design.svg" alt="">
+                </i>
+              </header>
+              <div>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  UI
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  UX
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Photoshop
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Métodos ágeis
+                </span>
+              </div>
+              <button class="button">INSCREVA-SE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+      
+      <section class="section" id="contribute">
+        <div class="container">
+          <img src="assets/build-rocket.svg" alt="Mulher construindo um foguete">
+          <div class="text">
+            <h2 class="title">
+              Como construir foguetes para levar quem precisa ao futuro?
+            </h2>
+            <p>
+              Estamos comprometidos em impactar a vida de quem precisa e contamos com a ajuda de empresas na área da educação para reunir cursos com conteúdos de qualidade formando futuros astronautas. 
+              <a href="">
+                Transforme a vida de quem poderá transformar o mundo.                
+              </a>
+            </p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- <footer>
+      <div class="container">
+        <div class="brand">
+          <a href="">
+            <img src="assets/logo.svg" alt="" />
+          </a>
+          <p>©2021 Space ForAll.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="oioi">
+          <div class="about">
+            <p>Sobre o projeto</p>
+            <div>
+              <a href="">Como funciona</a>
+              <a href="">Quem pode participar</a>
+              <a href="">Cursos</a>
+              <a href="">Como contribuir</a>
+            </div>
+          </div>
+
+          <div class="contactSocial">
+            <div class="contact">
+              <p>Fale conosco</p>
+              <a href="">faleconosco@spaceforall.com</a>
+            </div>
+            <div class="social">
+              <p>Compartilhe o projeto</p>
+              <div>
+                <a href="">
+                  <img src="assets/whatsapp.svg" alt="Whatsapp" />
+                </a>
+                <a href="">
+                  <img src="assets/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="">
+                  <img src="assets/linkedin.svg" alt="Linkedin" />
+                </a>
+                <a href="">
+                  <img src="assets/instagram.svg" alt="Instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
