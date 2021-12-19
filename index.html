@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+
+    <title>Space ForAll</title>
+    <meta
+    name="description"
+    content="Em parceria com empresas de educação oferecemos cursos pagos com formações de grande empregabilidade para pessoas carentes, começando a pagar apenas quando estiver trabalhando."
+    />
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,35 +19,52 @@
       rel="stylesheet"
     />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles main -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Space ForAll</title>
+
+    <!-- swiper -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- animate.css -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
   </head>
 
   <body>
     <header id="header">
       <nav class="container">
-        <a href="#" class="logo">
+        <a href="#home" rel="noopener" class="logo">
           <img src="assets/logo.svg" alt="Logo do Space ForAll" />
         </a>
 
         <ul>
-          <li>
-            <a href="">Início</a>
+          <li class="home active">
+            <a href="#home">Início</a>
           </li>
-          <li>
-            <a href="">O projeto</a>
+          <li class="launchBase">
+            <a href="#launchBase">O projeto</a>
           </li>
-          <li>
-            <a href="">Como participar</a>
+          <li class="astronaut-selection">
+            <a href="#astronaut-selection">Como participar</a>
           </li>
-          <li>
-            <a href="">Cursos</a>
+          <li class="courses"">
+            <a href="#courses">Cursos</a>
           </li>
         </ul>
-        <div class="toggle close"><img src="assets/close.svg" alt="" /></div>
-        <div class="toggle menu"><img src="assets/menu.svg" alt="" /></div>
+        <div class="toggle close">
+          <img src="assets/close.svg" alt="Ícone de fechar" />
+        </div>
+        <div class="toggle menu">
+          <img src="assets/menu.svg" alt="Ícone de menu" />
+        </div>
 
         <button class="button">INSCREVA-SE</button>
       </nav>
@@ -46,8 +73,9 @@
     <main>
       <section class="section" id="home">
         <div class="container">
-          <img id="planets3d" src="assets/planets3d.svg" alt="" />
-          <img id="rocket3d" src="assets/rocket3d.svg" alt="" />
+          <img id="planets3d" src="assets/planets3d.svg" alt="Planetas 3D" />
+          <img id="rocket3d" src="assets/rocket3d.svg" alt="Foguete 3D" />
+
           <div class="text">
             <h1>Levando <span>quem precisa</span> ao espaço</h1>
             <span> Oportunidade de estudo e trabalho </span>
@@ -63,7 +91,7 @@
 
       <div class="divider"></div>
 
-      <!-- <section class="section" id="launchBase">
+      <section class="section" id="launchBase">
         <div class="container">
           <div class="text">
             <h2 class="title">Base de lançamento</h2>
@@ -84,8 +112,7 @@
             <div class="align">
               <h3 class="counter">1</h3>
               <p>
-                O aluno não paga nada enquanto não possuir uma remuneração
-                mínima de R$ 3.000,00 por mês.
+                Você não paga nada enquanto não possuir uma <strong>remuneração mínima de R$ 3.000,00</strong> por mês.
               </p>
             </div>
 
@@ -93,21 +120,17 @@
               <div class="align">
                 <h3 class="counter">2</h3>
                 <p>
-                  A partir do momento que é atingido essa remuneração mínima, o
-                  aluno passará a pagar mensalmente uma porcentagem, relativa ao
-                  curso, da sua remuneração.
+                  Conquistando a remuneração mínima, <strong>você passará a pagar mensalmente uma parcela negociável</strong>, relativa ao curso.
                 </p>
               </div>
               <div class="align">
                 <h3 class="counter">3</h3>
                 <p>
-                  Caso o aluno pare de trabalhar ou tenha a renda abaixo do
-                  mínimo, o pagamento é suspenso. Demonstrando o comprometimento
-                  que temos com o sucesso das pessoas que confiam no projeto.
+                  Caso pare de trabalhar ou tenha a renda abaixo do mínimo, <strong>o pagamento é suspenso</strong> e nos comprometemos em lhe dar apoio.
                 </p>
               </div>
             </div>
-            <img src="assets/launch-base.svg" alt="" />
+            <img id="plataform" src="assets/launch-base.svg" alt="Plataforma de lançamento de foguete" />
           </div>
         </div>
       </section>
@@ -120,44 +143,45 @@
             <div class="text">
               <h2 class="title">Seleção de astronautas</h2>
               <p>
-                A seleção dos alunos será feita com base em seu perfil,priorizando os que moram no Brasil e em situação de pobreza.
+                A seleção dos alunos será feita com base em seu perfil,priorizando os que <strong>moram no Brasil</strong> e em <strong>situação de pobreza.</strong>
               </p>
               <p>
-                Não é necessário ter qualquer conhecimento prévio para se inscrever, apenas cumprir os critérios abaixo:
+              <strong>Não é necessário ter qualquer conhecimento prévio</strong> para se inscrever, apenas cumprir os critérios abaixo:
               </p>
             </div>
 
-            <div>
-              <img src="assets/astronaut.svg" alt="" />
+            <div id="astronaut" >
+              <img src="assets/astronaut.svg" alt="Astronauta no espaço"/>
+              <img src="assets/background-astronaut.svg" alt="">
             </div>
           </header>
           <div class="simple-cards">
             <div class="simple-card">
               <i>
-                <img src="assets/hood.svg" alt="">
+                <img src="assets/hood.svg" alt="Capelo">
               </i>
               <div class="line"></div>
               <span>Ensino médio</span>
-              <img class="arrow" src="assets/arrow.svg" alt="">
+              <img class="arrow" src="assets/arrow.svg" alt="Flecha">
             </div>
             <div class="simple-card">
               <i>
                 <img src="assets/hearth.svg" alt="">
               </i>
               <div class="line"></div>
-              <img class="arrow" src="assets/arrow.svg" alt="">
               <span>Comprometimento</span>
+              <img class="arrow" src="assets/arrow.svg" alt="Flecha">
             </div>
             <div class="simple-card">
               <i>
-                <img src="assets/+18.svg" alt="">
+                <img src="assets/+18.svg" alt="Maior de idade">
               </i>
               <div class="line"></div>
               <span>Maior de idade</span>
             </div>
             <div class="simple-card">
               <i>
-                <img src="assets/clock.svg" alt="">
+                <img src="assets/clock.svg" alt="Relógio">
               </i>
               <div class="line"></div>
               <span>Disponibilidade</span>
@@ -168,25 +192,152 @@
       <div class="divider"></div>
 
       <section class="section" id="courses">
-        <div class="container">
           <header>
-            <img src="assets/stars.svg" alt="">
+            <img id="stars" src="assets/stars.svg" alt="Estrelas">
             
-            <img id="telescope" src="assets/telescope.svg" alt="">
-            <h2 class="title">
-              Olhando para o espaço
-            </h2>
-            <p>Escolha entre cursos de diferentes áreas com <strong>formações completas com foco no mercado de trabalho.</strong></p>
-          </header>
-          <div class="cards">
-            <div class="card">
+            <img id="telescope" src="assets/telescope.svg" alt="Mulher observando o céu no telescópio">
+            <div class="text">
+              <h2 class="title">
+                Olhando para o espaço
+              </h2>
+              <p>Escolha entre cursos de diferentes áreas com <strong>formações completas com foco no mercado de trabalho.</strong></p>
+            </div>
+            </header>
+          <div class="cards swiper">
+            <div class="swiper-wrapper">
+              <div data-tilt class="card swiper-slide">
+                <header>
+                  <span>
+                    <h2>Ignite</h2>
+                    <h3>Rocketseat</h3>
+                  </span>
+                  <i>
+                    <img src="assets/ignite.svg" alt="Ícone curso Ignite">
+                  </i>
+                </header>
+                <div>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Backend
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Frontend
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Mobile
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Métodos ágeis
+                  </span>
+                </div>
+                <button class="button">INSCREVA-SE</button>
+              </div>
+              <div class="card swiper-slide">
+                <header>
+                  <span>
+                    <h2>Data Science</h2>
+                    <h3>Alura</h3>
+                  </span>
+                  <i>
+                    <img src="assets/data-science.svg" alt="Ícone curso Data Science">
+                  </i>
+                </header>
+                <div>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Banco de dados
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Machine Learning
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Ciência de dados
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Métodos ágeis
+                  </span>
+                </div>
+                <button class="button">INSCREVA-SE</button>
+              </div>
+              <div class="card swiper-slide">
+                <header>
+                  <span>
+                    <h2>Programação</h2>
+                    <h3>Alura</h3>
+                  </span>
+                  <i>
+                    <img src="assets/terminal.svg" alt="Ícone curso Design">
+                  </i>
+                </header>
+                <div>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Lógica
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Java
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    C#
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Métodos ágeis
+                  </span>
+                </div>
+                <button class="button">INSCREVA-SE</button>
+              </div>
+
+              <div class="card swiper-slide">
+                <header>
+                  <span>
+                    <h2>Design</h2>
+                    <h3>Digital House</h3>
+                  </span>
+                  <i>
+                    <img src="assets/design.svg" alt="Ícone curso Design">
+                  </i>
+                </header>
+                <div>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    UI
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    UX
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Photoshop
+                  </span>
+                  <span>
+                    <img src="assets/verified.svg" alt="Verificado">
+                    Métodos ágeis
+                  </span>
+                </div>
+                <button class="button">INSCREVA-SE</button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- <div class="cards ">
+            <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
               <header>
                 <span>
                   <h2>Ignite</h2>
                   <h3>Rocketseat</h3>
                 </span>
                 <i>
-                  <img src="assets/ignite.svg" alt="">
+                  <img src="assets/ignite.svg" alt="Ícone curso Ignite">
                 </i>
               </header>
               <div>
@@ -216,7 +367,7 @@
                   <h3>Alura</h3>
                 </span>
                 <i>
-                  <img src="assets/data-science.svg" alt="">
+                  <img src="assets/data-science.svg" alt="Ícone curso Data Science">
                 </i>
               </header>
               <div>
@@ -242,11 +393,41 @@
             <div class="card">
               <header>
                 <span>
+                  <h2>Programação</h2>
+                  <h3>Alura</h3>
+                </span>
+                <i>
+                  <img src="assets/terminal.svg" alt="Ícone curso Design">
+                </i>
+              </header>
+              <div>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Lógica
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Java
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  C#
+                </span>
+                <span>
+                  <img src="assets/verified.svg" alt="Verificado">
+                  Métodos ágeis
+                </span>
+              </div>
+              <button class="button">INSCREVA-SE</button>
+            </div>
+            <div class="card">
+              <header>
+                <span>
                   <h2>Design</h2>
                   <h3>Digital House</h3>
                 </span>
                 <i>
-                  <img src="assets/design.svg" alt="">
+                  <img src="assets/design.svg" alt="Ícone curso Design">
                 </i>
               </header>
               <div>
@@ -268,9 +449,8 @@
                 </span>
               </div>
               <button class="button">INSCREVA-SE</button>
-            </div>
-          </div>
-        </div>
+            </div> 
+          </div> -->
       </section>
 
       <div class="divider"></div>
@@ -284,54 +464,61 @@
             </h2>
             <p>
               Estamos comprometidos em impactar a vida de quem precisa e contamos com a ajuda de empresas na área da educação para reunir cursos com conteúdos de qualidade formando futuros astronautas. 
-              <a href="">
+              <a href="#">
                 Transforme a vida de quem poderá transformar o mundo.                
               </a>
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer>
+    <footer>
+
       <div class="container">
         <div class="brand">
-          <a href="">
-            <img src="assets/logo.svg" alt="" />
+          <a href="#home">
+            <img src="assets/logo.svg" alt="Logo da Space ForAll" />
           </a>
           <p>©2021 Space ForAll.</p>
           <p>Todos os direitos reservados.</p>
         </div>
 
-        <div class="oioi">
+        <div class="about-contactSocial">
           <div class="about">
             <p>Sobre o projeto</p>
             <div>
-              <a href="">Como funciona</a>
-              <a href="">Quem pode participar</a>
-              <a href="">Cursos</a>
-              <a href="">Como contribuir</a>
+              <a href="#launchBase">Como funciona</a>
+              <a href="#astronaut-selection">Quem pode participar</a>
+              <a href="#courses">Cursos</a>
+              <a href="#contribute">Como contribuir</a>
             </div>
           </div>
 
           <div class="contactSocial">
             <div class="contact">
               <p>Fale conosco</p>
-              <a href="">faleconosco@spaceforall.com</a>
+              <a href="mailto:faleconosco@spaceforall.com" rel="noopener"
+                >faleconosco@spaceforall.com</a
+              >
             </div>
             <div class="social">
               <p>Compartilhe o projeto</p>
               <div>
-                <a href="">
+                <a
+                  href="https://api.whatsapp.com/send?text=Olha só essa oportunidade! @spaceforall"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <img src="assets/whatsapp.svg" alt="Whatsapp" />
                 </a>
-                <a href="">
+                <a href="https://facebook.com" rel="noopener" target="_blank">
                   <img src="assets/facebook.svg" alt="Facebook" />
                 </a>
-                <a href="">
+                <a href="https://linkedin.com" rel="noopener" target="_blank">
                   <img src="assets/linkedin.svg" alt="Linkedin" />
                 </a>
-                <a href="">
+                <a href="https://instagram.com" rel="noopener" target="_blank">
                   <img src="assets/instagram.svg" alt="Instagram" />
                 </a>
               </div>
@@ -339,8 +526,19 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    
+    
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script src="main.js"></script>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- vanilla-tilt -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <!-- main -->
+    <script src="main.js"></script>    
   </body>
 </html>
