@@ -8,10 +8,6 @@ function changeHeaderWhenScroll() {
   }
 }
 
-window.addEventListener('scroll', function () {
-  changeHeaderWhenScroll()
-})
-
 const header = document.querySelector('header')
 const toggle = document.querySelectorAll('header .toggle')
 for (const element of toggle) {
@@ -28,9 +24,36 @@ for (const element of toggle) {
   })
 }
 
+function changeLinkHeaderWhenScroll() {
+  const sections = document.querySelectorAll('section')
+  const navLib = document.querySelectorAll('nav ul li')
+
+  window.addEventListener('scroll', () => {
+    let current = ''
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop
+      const sectionHeight = section.clientHeight
+      if (scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id')
+      }
+    })
+
+    navLib.forEach(li => {
+      li.classList.remove('active')
+      if (li.classList.contains(current)) {
+        li.classList.add('active')
+      }
+    })
+  })
+}
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  changeLinkHeaderWhenScroll()
+})
+
 // swiper
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
@@ -39,9 +62,12 @@ const swiper = new Swiper('.swiper', {
   speed: 400,
   effect: 'slide',
   initialSlide: 1,
-  loop: true,
 
   breakpoints: {
+    1280: {
+      slidesPerView: 3
+    },
+
     767: {
       slidesPerView: 2,
       setWrapperSize: true
@@ -72,34 +98,3 @@ scrollReveal.reveal(
 `,
   { interval: 100 }
 )
-
-// VanillaTilt
-VanillaTilt.init(document.querySelector('.your-element'), {
-  max: 25,
-  speed: 400
-})
-
-//It also supports NodeList
-VanillaTilt.init(document.querySelectorAll('.your-element'))
-
-// Active
-const sections = document.querySelectorAll('section')
-const navLib = document.querySelectorAll('nav ul li')
-
-window.addEventListener('scroll', () => {
-  let current = ''
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.clientHeight
-    if (scrollY >= sectionTop - sectionHeight / 3) {
-      current = section.getAttribute('id')
-    }
-  })
-
-  navLib.forEach(li => {
-    li.classList.remove('active')
-    if (li.classList.contains(current)) {
-      li.classList.add('active')
-    }
-  })
-})
