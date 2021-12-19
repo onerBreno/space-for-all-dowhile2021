@@ -55,7 +55,8 @@ window.addEventListener('scroll', function () {
 // swiper
 const swiper = new Swiper('.swiper', {
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true
   },
   mousewheel: true,
   keyboard: true,
