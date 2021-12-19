@@ -24,6 +24,14 @@ for (const element of toggle) {
   })
 }
 
+const links = document.querySelectorAll('nav ul li a')
+for (const link of links) {
+  link.addEventListener('click', function () {
+    header.classList.remove('show')
+    document.querySelector('body').classList.remove('scroll-none')
+  })
+}
+
 function changeLinkHeaderWhenScroll() {
   const sections = document.querySelectorAll('section')
   const navLib = document.querySelectorAll('nav ul li')
