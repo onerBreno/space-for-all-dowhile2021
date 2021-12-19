@@ -57,6 +57,7 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
   },
+  mousewheel: true,
   keyboard: true,
   spaceBetween: 32,
   speed: 400,

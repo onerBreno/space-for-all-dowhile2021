@@ -101,6 +101,21 @@ ul {
   }
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4d4d57;
+}
+
 /* ------- layout ------- */
 
 @media (min-width: 1160px) {
